@@ -10,7 +10,6 @@ RUN apt -qq update && apt -qq install -y git wget pv jq python3-dev mediainfo
 RUN echo deb http://http.us.debian.org/debian/ testing non-free contrib main > /etc/apt/sources.list && \
     apt -qq update
 # Install other dependencies
-RUN apt-get install libcrypt1 -y
 # Install AOM
 RUN apt-get install libaom-dev -y
 # Compile and install fresh ffmpeg from sources:
