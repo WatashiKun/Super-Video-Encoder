@@ -13,8 +13,6 @@ RUN echo deb http://http.us.debian.org/debian/ testing non-free contrib main > /
 # Install AOM
 # Compile and install fresh ffmpeg from sources:
 # See: https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu
-apt-get update  && \
-apt-get install libdrm-dev -y
 RUN wget https://ffmpeg.org/releases/ffmpeg-4.2.1.tar.bz2  && \
 tar -xf ffmpeg-4.2.1.tar.bz2  && \
 rm ffmpeg-4.2.1.tar.bz2  && \
